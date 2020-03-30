@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
 
         'columns' => [
-            ['class' => 'yii\grid\CheckboxColumn'],
+            //['class' => 'yii\grid\CheckboxColumn'],
             ['class' => 'yii\grid\SerialColumn'],
 
             'code',
