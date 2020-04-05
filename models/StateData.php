@@ -47,7 +47,7 @@ class StateData extends \yii\db\ActiveRecord
             'id' => 'ID',
             'date' => 'Date',
             'state' => 'State',
-            'fips' => 'FIPS',
+            'fips' => 'Fips',
             'cases' => 'Cases',
             'deaths' => 'Deaths',
         ];

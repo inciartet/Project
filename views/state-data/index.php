@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'id',
             'date',
             'state',
-            'fips',
+            ['attribute' => 'fips', 'label' => 'FIBS'],
             'cases',
             'deaths',
 
