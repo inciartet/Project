@@ -19,13 +19,13 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create State Data', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'showFooter'=>FALSE,
         'columns' => [
             //['class' => 'yii\grid\SerialColumn'],
 
@@ -33,10 +33,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'date',
             'state',
             ['attribute' => 'fips', 'label' => 'FIBS'],
-            'cases',
-            'deaths',
+            ['attribute' => 'cases', 'label' => 'Total Cases'],
+            ['attribute' => 'deaths', 'label' => 'Total Deaths'],
 
             ['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
+
         ],
     ]); ?>
 
