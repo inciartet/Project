@@ -4,6 +4,8 @@
 
 $this->title = 'My Yii Application';
 ?>
+<script> console.log("Hello world!"); </script> // console test
+
 <div class="site-index">
 
     <div class="jumbotron">
