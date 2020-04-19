@@ -4,7 +4,7 @@
 
 $this->title = 'My Yii Application';
 ?>
-<script> console.log("Hello world!"); </script> // console test
+<script> console.log("Hello world!"); </script> <!-- console log test -->
 
 <div class="site-index">
 
